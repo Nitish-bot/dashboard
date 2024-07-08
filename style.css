@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+:root {
+    --text: #eaf3e7;
+    --background: #090e07;
+    --primary: #aacea1;
+    --secondary: #396f53;
+    --accent: #58a78a;    
+}
+
 img {
     width: 50px;
 }
@@ -13,7 +21,17 @@ body {
 }
 
 aside {
+    padding: 16px;
+    min-width: 150px;
     grid-area: 1 / 1 / 3 / 2;
+}
+
+aside > ul {
+    list-style-type: none;
+}
+
+li > img {
+    width: 30px;
 }
 
 header {

@@ -16,6 +16,7 @@ img {
 }
 
 body {
+    font-family: Robot, sans-serif;
     display: grid;
     grid-template: 1fr 5fr / 1fr 4fr;
 }
@@ -49,16 +50,23 @@ li {
     gap: 12px;
 }
 
-li.meta {
-
-}
-
 li > img {
     width: 30px;
 }
 
-header {
+#header {
     grid-area : 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+}
+
+#header img {
+    padding: 16px;
+    width: 30px;
+}
+
+#search > input {
+    width: 44vw;
 }
 
 main {

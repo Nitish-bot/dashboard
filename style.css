@@ -63,12 +63,12 @@ li > img {
     padding: 8px;
     grid-area : 1 / 2 / 2 / 3;
     display: grid;
-    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template: 1fr 1fr / 2fr 1fr 1fr;
     align-items: center;
 }
 
 #header #search {
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 1 / 2 / 3;
     display: flex;
     gap: 8px;
     align-items: center;
@@ -98,11 +98,24 @@ li > img {
     width: 50px;
 }
 
+#buttons {
+    grid-area: 2 / 2 / 3 / 4;
+    display: flex;
+    gap: 4px;
+    justify-self: end;
+    margin-right: 12px;
+}
+
 #header button{
-    padding: 12px;
-    color: yellow;
+    width: 72px;
+    padding: 6px;
+    border-radius: 10px;
+    border: 2px solid rgb(var(--accent));
+    background-color: rgba(var(--primary), 0.5);
+    color: rgb(var(--secondary))
 }
 
 main {
+    padding: 24px;
     grid-area: 2 / 2 / 3 / 3;
 }

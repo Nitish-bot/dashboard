@@ -18,7 +18,7 @@ img {
 body {
     font-family: Roboto, sans-serif;
     display: grid;
-    grid-template: 1fr 7fr / 1fr 4fr;
+    grid-template: 1fr 7fr / 1fr 7fr;
 }
 
 #sidebar {
@@ -26,7 +26,6 @@ body {
     background-color: rgba(var(--accent), 0.5);
     padding: 24px;
     min-width: 175px;
-    max-width: 200px;
     grid-area: 1 / 1 / 3 / 2;
 }
 
@@ -99,8 +98,9 @@ li > img {
     width: 50px;
 }
 
-#header #buttons {
-    grid-area: 
+#header button{
+    padding: 12px;
+    color: yellow;
 }
 
 main {

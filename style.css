@@ -178,10 +178,10 @@ main > div {
     border-radius: 12px;
     padding: 12px;
     background-color: rgba(var(--accent), 0.5);
-
     margin-top: 32px;
     display: grid;
     grid-template-rows: 20px 1fr 1fr 1fr 1fr;
+    gap: 12px;
 }
 
 .prof {
@@ -189,7 +189,7 @@ main > div {
     grid-template-columns: 50px 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
-
+    grid-column-gap: 16px;
 }
 
 .prof img {
@@ -198,11 +198,11 @@ main > div {
 }
 
 .prof span {
-    justify-self: end;
+    justify-self: start;
 }
 
 .prof p {
     text-align: right;
-    justify-self: center;
+    justify-self: start;
 }
 

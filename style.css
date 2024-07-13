@@ -128,22 +128,23 @@ main {
 
 main > div {
     font-size: 20px;
-    border: 1px solid black;
 }
 
 #cardHolder {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
     gap: 30px;
-    /* grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr; */
 }
 
 .card {
+    border-radius: 12px;
     padding: 16px;
     background-color: rgba(var(--accent), 0.5);
     display: grid;
     grid-template-rows: 20px 1fr 20px;
+    grid-template-columns: 1fr;
+    gap: 12px;
 }
 
 .card img {
@@ -157,3 +158,51 @@ main > div {
 #side {
     min-width: 180px;
 }
+
+#side .announcements {
+    border-radius: 12px;
+    padding: 12px;
+    background-color: rgba(var(--accent), 0.5);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.announcements div {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    gap: 8px;
+}
+
+.trending {
+    border-radius: 12px;
+    padding: 12px;
+    background-color: rgba(var(--accent), 0.5);
+
+    margin-top: 32px;
+    display: grid;
+    grid-template-rows: 20px 1fr 1fr 1fr 1fr;
+}
+
+.prof {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+
+}
+
+.prof img {
+    width: 50px;
+    grid-row-start: span 2;
+}
+
+.prof span {
+    justify-self: end;
+}
+
+.prof p {
+    text-align: right;
+    justify-self: center;
+}
+
